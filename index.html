@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaviGo - Indoor Navigation for All</title>
+    <!-- 1. Include Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Simple accessibility improvement for focus */
+        :focus-visible {
+            outline: 3px solid #0EA5E9;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans antialiased">
+
+    <!-- Header -->
+    <header class="container mx-auto px-6 py-8">
+        <h1 class="text-4xl md:text-5xl font-bold text-center text-cyan-400">
+            NaviGo
+        </h1>
+        <p class="text-xl md:text-2xl text-center text-gray-300 mt-2">
+            Your guide in the great indoors.
+        </p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12 flex flex-col items-center">
+
+        <!-- Hero Section -->
+        <section class="text-center max-w-2xl">
+            <h2 class="text-3xl font-semibold mb-4">Empowering Independence</h2>
+            <p class="text-lg text-gray-400 mb-8">
+                NaviGo is a hackathon prototype designed to help visually impaired individuals navigate complex indoor spaces. Using your phone's camera, it allows you to record and replay paths with clear, turn-by-turn audio guidance.
+            </p>
+            <p class="text-sm text-yellow-400 bg-yellow-900 bg-opacity-30 rounded-lg p-4 mb-8">
+                <strong>This is a hackathon prototype.</strong> It is not a complete product and is intended for demonstration purposes only.
+            </p>
+        </section>
+
+        <!-- Download Section -->
+        <section class="bg-gray-800 p-8 rounded-2xl shadow-xl w-full max-w-md">
+            <h3 class="text-2xl font-bold text-center mb-6">Get the App</h3>
+            <p class="text-center text-gray-400 mb-6">
+                Download the Android `.apk` file directly. You will need to enable "Install from unknown sources" on your Android device to install it.
+            </p>
+            
+            <!-- The Download Button -->
+            <!-- It links to the 'naviGo.apk' file you will upload to GitHub -->
+            <a href="./naviGo.apk" 
+               download="naviGo.apk"
+               class="block w-full bg-cyan-500 hover:bg-cyan-600 text-gray-900 font-bold text-lg text-center py-4 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300 focus-visible:ring-opacity-75">
+                Download NaviGo
+            </a>
+            
+            <p class="text-xs text-gray-500 text-center mt-4">
+                (Version: 0.1.0 - Hackathon MVP)
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center p-8 mt-12 text-gray-600">
+        <p>&copy; 2025 - Team Sensecode (Team 4)</p>
+        <p>A Saarthi Hackathon Project</p>
+    </footer>
+
+</body>
+</html>
