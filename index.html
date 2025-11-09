@@ -6,11 +6,18 @@
     <title>NaviGo - Indoor Navigation for All</title>
     <!-- 1. Include Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 2. Use Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         /* Simple accessibility improvement for focus */
         :focus-visible {
             outline: 3px solid #0EA5E9;
             outline-offset: 2px;
+        }
+        body {
+            font-family: 'Inter', 'sans-serif';
         }
     </style>
 </head>
@@ -48,7 +55,7 @@
             </p>
             
             <!-- The Download Button -->
-            <!-- It links to the 'naviGo.apk' file you will upload to GitHub -->
+            <!-- This link points to the 'naviGo.apk' file you will upload to GitHub -->
             <a href="./naviGo.apk" 
                download="naviGo.apk"
                class="block w-full bg-cyan-500 hover:bg-cyan-600 text-gray-900 font-bold text-lg text-center py-4 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300 focus-visible:ring-opacity-75">
